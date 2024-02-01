@@ -4,7 +4,7 @@ A QR code web component, drop it in anywhere.
 
 ## Usage
 
-This uses [Lit](https://lit.dev) so first, [add Lit to your importmap](https://thingster.app/things/qT_iAr9PuPK2FVNJCxANY). 
+This uses [Lit](https://lit.dev), so first [add Lit to your importmap](https://thingster.app/things/qT_iAr9PuPK2FVNJCxANY). 
 
 Then you can just use it anywhere:
 
