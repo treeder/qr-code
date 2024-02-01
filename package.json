@@ -1,0 +1,9 @@
+{
+  "name": "qr-code",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "generate qr codes",
+  "main": "qr-code.js",
+  "author": "treeder",
+  "license": "MIT"
+}
