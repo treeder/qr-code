@@ -4,31 +4,31 @@ import QRious from 'https://cdn.jsdelivr.net/npm/qrious@4/+esm'
 export class QrCode extends LitElement {
     static properties = {
         value: { type: String }, // value for QR code
-
+        size: { type: Number }, // size of QR code
         error: { type: Object },
     }
 
     constructor() {
-        super();
+        super()
         this.value = ''
+        this.size = 128
         this.error = null
     }
 
     async connectedCallback() {
-        super.connectedCallback();
+        super.connectedCallback()
     }
 
     attributeChangedCallback(name, oldValue, newValue) {
         super.attributeChangedCallback(name, oldValue, newValue)
-        console.log("qr-code.js: ATTR CHANGED:", name, oldValue, newValue)
+        // console.log("qr-code.js: ATTR CHANGED:", name, oldValue, newValue)
     }
 
     firstUpdated() {
-        console.log('firstUpdated')
         super.firstUpdated()
         var canvas = this.renderRoot.querySelector('#qr')
-        console.log("canvas:", canvas)
-        console.log(this.value)
+        // console.log("canvas:", canvas)
+        // console.log(this.value)
         // https://github.com/neocotic/qrious#readme
         var qr = new QRious({
             element: canvas,
@@ -36,14 +36,12 @@ export class QrCode extends LitElement {
             // background: '#303030',// '#01368d',
             // backgroundAlpha: 0.5,
             foreground: '#4361ee',
-            size: 250,
+            size: this.size,
         })
     }
 
     async getUpdateComplete() {
-        console.log("update complete 1111")
         await super.getUpdateComplete();
-        console.log("update complete")
         return true
     }
 
