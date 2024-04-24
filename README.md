@@ -15,3 +15,14 @@ import 'https://cdn.jsdelivr.net/gh/treeder/qr-code@0/qr-code.js'
 
 <qr-code value="SOME VALUE"></qr-code>
 ```
+
+## Options
+
+These can be passed in as HTML attributes, eg:
+
+```html
+<qr-code size="200" value="SOME VALUE"></qr-code>
+```
+
+- size - sets height and width of the QR image - default: 128
+
