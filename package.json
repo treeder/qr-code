@@ -1,6 +1,6 @@
 {
   "name": "qr-code",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "description": "generate qr codes",
   "main": "qr-code.js",
